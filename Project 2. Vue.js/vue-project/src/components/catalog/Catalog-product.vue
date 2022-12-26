@@ -92,7 +92,6 @@ export default {
     },
     methods: {
         ...mapActions([
-            'GET_PRODUCTS_FROM_API',
             'ADD_TO_CART'
         ]),
         addToCard(data) {
@@ -121,7 +120,7 @@ export default {
         }
     },
     mounted() {
-        this.GET_PRODUCTS_FROM_API()
+        this.state.products
             .then((response) => {
                 if (response.data) {
                     this.sortByCategories()
