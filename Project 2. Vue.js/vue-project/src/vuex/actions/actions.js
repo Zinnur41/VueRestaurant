@@ -1,4 +1,3 @@
-import axios from "axios";
 
 export default {
     ADD_TO_CART({commit}, product) {
